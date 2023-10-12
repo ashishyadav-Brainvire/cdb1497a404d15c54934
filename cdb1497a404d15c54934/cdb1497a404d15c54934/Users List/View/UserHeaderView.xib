@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserHeaderView" id="U6b-Vx-4bR" customClass="UserHeaderView" customModule="cdb1497a404d15c54934" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ele-0d-xE5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wes-22-3IR">
+                            <rect key="frame" x="16" y="17" width="40" height="40"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bLe-ud-V3d">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Rof-P0-Tkw"/>
+                                <constraint firstItem="bLe-ud-V3d" firstAttribute="top" secondItem="wes-22-3IR" secondAttribute="top" id="ZP0-1a-cDA"/>
+                                <constraint firstAttribute="width" constant="40" id="hZk-Z4-55e"/>
+                                <constraint firstAttribute="trailing" secondItem="bLe-ud-V3d" secondAttribute="trailing" id="rMc-IQ-4NV"/>
+                                <constraint firstAttribute="bottom" secondItem="bLe-ud-V3d" secondAttribute="bottom" id="wq2-Us-EY3"/>
+                                <constraint firstItem="bLe-ud-V3d" firstAttribute="leading" secondItem="wes-22-3IR" secondAttribute="leading" id="wsF-Hg-nbO"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0DP-Li-9MY">
+                            <rect key="frame" x="68" y="26.666666666666671" width="236" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="wes-22-3IR" firstAttribute="centerY" secondItem="ele-0d-xE5" secondAttribute="centerY" id="4zP-7S-2OG"/>
+                        <constraint firstItem="wes-22-3IR" firstAttribute="leading" secondItem="ele-0d-xE5" secondAttribute="leading" constant="16" id="FHg-2E-uWo"/>
+                        <constraint firstItem="0DP-Li-9MY" firstAttribute="centerY" secondItem="wes-22-3IR" secondAttribute="centerY" id="RIV-tm-Ttl"/>
+                        <constraint firstItem="0DP-Li-9MY" firstAttribute="leading" secondItem="wes-22-3IR" secondAttribute="trailing" constant="12" id="ZQ8-sf-bJF"/>
+                        <constraint firstAttribute="trailing" secondItem="0DP-Li-9MY" secondAttribute="trailing" constant="16" id="wKb-JI-Ykz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="ele-0d-xE5" secondAttribute="trailing" id="3hH-tQ-Vxa"/>
+                <constraint firstAttribute="bottom" secondItem="ele-0d-xE5" secondAttribute="bottom" id="cde-L2-Jh4"/>
+                <constraint firstItem="ele-0d-xE5" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="kQD-D6-cGa"/>
+                <constraint firstItem="ele-0d-xE5" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="q8J-bh-sgn"/>
+            </constraints>
+            <connections>
+                <outlet property="imgName" destination="0DP-Li-9MY" id="Qic-eM-p8b"/>
+                <outlet property="imgUser" destination="bLe-ud-V3d" id="eTb-Y1-48k"/>
+                <outlet property="viewImageBase" destination="wes-22-3IR" id="zpa-zg-0O9"/>
+            </connections>
+            <point key="canvasLocation" x="117.55725190839694" y="28.169014084507044"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
